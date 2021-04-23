@@ -1,0 +1,14 @@
+{
+  "name": "kunlun",
+  "version": "0.1.0",
+  "author": "Xiangsong Zeng <xiangsong.zeng@outlook.com>",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "scripts": {
+    "check-format": "prettier --check '**/*.{md,yml,yaml,json}'"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2"
+  }
+}
