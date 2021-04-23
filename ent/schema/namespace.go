@@ -36,13 +36,13 @@ func (Namespace) Edges() []ent.Edge {
 			Unique().
 			StorageKey(edge.Column("namespace_id")).
 			Annotations(entsql.Annotation{
-				OnDelete: entsql.Cascade,
+				OnDelete: entsql.SetNull,
 			}),
 		edge.To("group", Group.Type).
 			Unique().
 			StorageKey(edge.Column("namespace_id")).
 			Annotations(entsql.Annotation{
-				OnDelete: entsql.Cascade,
+				OnDelete: entsql.SetNull,
 			}),
 	}
 }
