@@ -7,7 +7,14 @@
   "scripts": {
     "check-format": "prettier --check '**/*.{md,yml,yaml,json}'"
   },
+  "pre-commit": {
+    "silent": true,
+    "run": [
+      "check-format"
+    ]
+  },
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2"
   }
