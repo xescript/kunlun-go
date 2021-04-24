@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestDBUrlToDsn(t *testing.T) {
+func TestDbUrlToDsn(t *testing.T) {
 	dialect1, dsn1, err := DbUrlToDsn("sqlite://./db.sqlite3?_fk=1&cache=shared")
 	assert.Nil(t, err)
 	assert.Equal(t, dialect.SQLite, dialect1)
